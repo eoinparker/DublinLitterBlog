@@ -12,7 +12,7 @@ Helper scripts for http://dublinlitterblog.com and http://fixyourstreet.ie inter
 
 ## Other requirements:
 - a valid Oauth2 token from Wordpress, stored in the file install_dir/wordpress_oauth_token.txt
-- a valid Oauth2 token from MS Bing, sotred in the file install_dir/bing_oauth_token.txt
+- a valid Oauth2 token from MS Bing, stored in the file install_dir/bing_oauth_token.txt
 
 ## How
 Usage: install_dir/control.sh <littering_image_1> [littering_image_2] [littering_image_3] ...
