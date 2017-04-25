@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Script to compute the geo-coords of an image
-# If it has embedded coords, use them.
-# If not, use the supplied street address and look it up 3 ways : Google, Bing, OpenStreetMap
-# If 2 of those 3 match, great; if not, ask for human assistance
+# Script to compute the geo-coords of an image.
+# If the image has embedded coords, use them.
+# If not, use the supplied street address and look it up 3 ways : Google, Bing, OpenStreetMap.
+# If 2 of those 3 match, great; if not, ask for human assistance.
 
 basedir=$(dirname $BASH_SOURCE)
 
