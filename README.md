@@ -1,5 +1,5 @@
 # DublinLitterBlog
-Scripted tasks for http://dublinlitterblog.com and http://fixyourstreet.ie interaction.
+Helper scripts for http://dublinlitterblog.com and http://fixyourstreet.ie interaction.
 
 ## MacOS only. No plans to port.  
 
