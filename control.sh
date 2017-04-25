@@ -1,5 +1,9 @@
 #!/bin/bash 
 
+# Main entrypoint.  This script invokes all the other ones repeatedly.
+# Operates by building a temporary script dedicated to the current collection of images (usually there's just one),
+# and calling it.
+
 clear
 
 if [ $# -lt 1 ]
