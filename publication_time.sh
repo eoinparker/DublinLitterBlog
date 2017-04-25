@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Helper script called by the main control one. Computes publication time.
+# Takes care of:
+# - timezones & DST
+# - random minutes value if the human specifies an hour
+# - immediate publication, with 5 minute grace period
+# Twitter, Facebook & Wordpress analytics show that the best time for publication is 7pm -> 10pm GMT.
+# Maximises views.  Also good to stagger the posts.
+
 if [ $# -ne 1 ]
 then
 echo Usage: $0 '<dlb_output_script>'
