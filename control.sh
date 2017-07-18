@@ -196,7 +196,7 @@ echo PUBLICATION TIME AND TWITTER RESPONSE
 echo
 echo \${human_readable_publication_datetime}
 echo
-echo Thx,incident rprtd for cleanup.Also set for publish on dublinlitter.com,Em,FB\& Tw @ \${twitter_friendly_publication_datetime}
+echo Thx,incident rprtd for cleanup.Also set for publish on dublinlitterblog site,Em,FB\& Tw @ \${twitter_friendly_publication_datetime}
 echo
 
 
@@ -218,7 +218,7 @@ echo PUBLICATION TIME AND TWITTER RESPONSE
 echo
 echo \${human_readable_publication_datetime}
 echo
-echo Thx,incident rprtd for cleanup.Also set for publish on dublinlitter.com,Em,FB\& Tw @ \${twitter_friendly_publication_datetime}
+echo Thx,incident rprtd for cleanup.Also set for publish on dublinlitterblog site,Em,FB\& Tw @ \${twitter_friendly_publication_datetime}
 echo
 
 echo
