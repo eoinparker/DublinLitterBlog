@@ -171,17 +171,17 @@ echo latitude_longitude: ${latitude_longitude}
 
 ##################
 echo
-echo Paintbrush scrubbing
+echo GIMP scrubbing
 echo --------------------
 paintbrush=n
-read -p "Open in PaintBrush? [n]" paintbrush
+read -p "Open in GIMP? [n]" paintbrush
 if [ "${paintbrush}" == "y" ]
 then
 echo Opening
-# sudo killall Paintbrush
-sudo /Applications/Paintbrush.app/Contents/MacOS/Paintbrush ${postprocessed_filename} &
-osascript -e 'tell app "PaintBrush" to activate' ; fg
-# sudo open -a /Applications/Paintbrush.app/ ${postprocessed_filename}
+# sudo killall GIMP
+# sudo /Applications/GIMP.app/Contents/MacOS/GIMP ${postprocessed_filename} &
+open -a GIMP ${postprocessed_filename} 
+# osascript -e 'tell app "GIMP" to activate' ; fg
 sips -s format jpeg ${postprocessed_filename} --out file_tmp.jpg
 chmod 777 ${postprocessed_filename}
 mv file_tmp.jpg ${postprocessed_filename}

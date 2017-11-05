@@ -47,7 +47,9 @@ filename_uid=file${randifier}
 
 for filename in $*
 do
-echo $filename
+echo Processing $filename
+chmod 777 $filename
+xattr -c $filename
 index=$(expr ${index} + 1)
 postprocessed_filename=${filename_uid}${index}.jpg
 ${basedir}/process.sh ${filename} ${postprocessed_filename} ${dlb_script} ${randifier} ${index} ${global_image_title}
