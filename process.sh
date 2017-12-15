@@ -274,8 +274,8 @@ fi
 
 if [ "${fixyourstreet}" == "y" ] || [ "${fixyourstreet}" == "" ]
 then
-curl -v -F 'task=report' -F "incident_title=${fix_your_street_title}" -F "incident_description=${fixyourstreet_description}" ${incident_time} -F "incident_category=${fys_category}" ${latitude_longitude}  -F "incident_photo[]=@${postprocessed_filename};filename=${postprocessed_filename};type=image/jpeg" -F "location_name=${filename}" http://fixyourstreet.ie/api
-# curl -v -F 'task=report' -F "incident_title=${fix_your_street_title}" -F "incident_description=${fixyourstreet_description}" ${incident_time} -F "incident_category=${fys_category}" ${latitude_longitude}  -F "incident_photo[]=@${postprocessed_filename};filename=${postprocessed_filename};type=image/jpeg" -F "location_name=${filename}" http://fixyourstreet.ie/api
+curl -v -F 'task=report' -F "incident_title=${fix_your_street_title}" -F "incident_description=${fixyourstreet_description}" ${incident_time} -F "incident_category=${fys_category}" ${latitude_longitude}  -F "incident_photo[]=@${postprocessed_filename};filename=${postprocessed_filename};type=image/jpeg" -F "location_name=${filename}" -F "person_first=Admin" -F "person_last=DublinLitterBlog" -F "person_email=admin@dublinlitterblog.com" http://fixyourstreet.ie/api
+# curl -v -F 'task=report' -F "incident_title=${fix_your_street_title}" -F "incident_description=${fixyourstreet_description}" ${incident_time} -F "incident_category=${fys_category}" ${latitude_longitude}  -F "incident_photo[]=@${postprocessed_filename};filename=${postprocessed_filename};type=image/jpeg" -F "location_name=${filename}" -F "person_first=Admin" -F "person_last=DublinLitterBlog" -F "person_email=admin@dublinlitterblog.com" http://fixyourstreet.ie/api
 echo report_count=\"\$\(expr \${report_count} + 1\)\" >> ${dlb_script}
 fi
 
